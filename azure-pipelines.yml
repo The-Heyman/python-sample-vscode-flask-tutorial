@@ -28,3 +28,9 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- task: SynopsysDetectTask@2
+  inputs:
+    Products: 'BD'
+    BlackDuckService: 'BlackDuck-ADO-Test'
+    DetectVersion: 'latest'
