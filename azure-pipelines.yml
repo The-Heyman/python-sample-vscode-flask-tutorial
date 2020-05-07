@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
 strategy:
   matrix:
     Python38:
@@ -36,9 +36,9 @@ steps:
     DetectVersion: 'latest'
     DetectArguments: |
       --blackduck.trust.cert=true 
-      --detect.project.name="The-Heyman.python-sample-vscode-flask-tutorial-azure-$(Build.BuildId)" 
+      --detect.project.name="python-sample-vscode-flask-tutorial-azure-$(Build.BuildId)" 
       --detect.project.version.name="1.0.0" 
-      --detect.code.location.name="The-Heyman.python-sample-vscode-flask-tutorial-azure-$(Build.BuildId)" 
+      --detect.code.location.name="python-sample-vscode-flask-tutorial-azure-$(Build.BuildId)" 
       --detect.project.version.phase="DEVELOPMENT" 
       --detect.detector.search.depth="1" 
       --detect.project.tier="1" 
