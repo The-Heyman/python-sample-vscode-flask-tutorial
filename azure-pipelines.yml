@@ -35,7 +35,7 @@ steps:
 - task: SynopsysDetectTask@2
   inputs:
     Products: 'BD'
-    BlackDuckService: 'BlackDuck-ADO-Test'
+    BlackDuckService: 'BlackDuck-ADO-Test-Python3.8'
     DetectVersion: 'latest'
     DetectArguments: |
       --blackduck.trust.cert=true 
